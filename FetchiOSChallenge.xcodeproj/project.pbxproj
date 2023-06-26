@@ -24,7 +24,22 @@
 		6BD7BCA72A48FCD40009C1EC /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCA62A48FCD40009C1EC /* WebImageView.swift */; };
 		6BD7BCA92A48FCEB0009C1EC /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCA82A48FCEB0009C1EC /* AsyncImageView.swift */; };
 		6BD7BCAB2A48FD000009C1EC /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCAA2A48FD000009C1EC /* NetworkingError.swift */; };
+		6BD7BCC12A4903370009C1EC /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6BD7BCC02A4903370009C1EC /* SDWebImageSwiftUI */; };
+		6BD7BCC32A49038A0009C1EC /* MealDetailServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCC22A49038A0009C1EC /* MealDetailServiceMock.swift */; };
+		6BD7BCC52A4904CE0009C1EC /* MealDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCC42A4904CE0009C1EC /* MealDetailViewModelTest.swift */; };
+		6BD7BCC72A49121F0009C1EC /* MealServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCC62A49121F0009C1EC /* MealServiceMock.swift */; };
+		6BD7BCC92A4912D90009C1EC /* MealViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD7BCC82A4912D90009C1EC /* MealViewModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BD7BCBA2A49019E0009C1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BD7BC562A48FB270009C1EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD7BC5D2A48FB270009C1EC;
+			remoteInfo = FetchiOSChallenge;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6BD7BC5E2A48FB270009C1EC /* FetchiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +59,11 @@
 		6BD7BCA62A48FCD40009C1EC /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		6BD7BCA82A48FCEB0009C1EC /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		6BD7BCAA2A48FD000009C1EC /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		6BD7BCB62A49019E0009C1EC /* FetchiOSChallengeUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchiOSChallengeUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD7BCC22A49038A0009C1EC /* MealDetailServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailServiceMock.swift; sourceTree = "<group>"; };
+		6BD7BCC42A4904CE0009C1EC /* MealDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModelTest.swift; sourceTree = "<group>"; };
+		6BD7BCC62A49121F0009C1EC /* MealServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealServiceMock.swift; sourceTree = "<group>"; };
+		6BD7BCC82A4912D90009C1EC /* MealViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +75,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BD7BCB32A49019E0009C1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD7BCC12A4903370009C1EC /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,7 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				6BD7BC602A48FB270009C1EC /* FetchiOSChallenge */,
+				6BD7BCB72A49019E0009C1EC /* FetchiOSChallengeUnitTests */,
 				6BD7BC5F2A48FB270009C1EC /* Products */,
+				6BD7BCBF2A4903370009C1EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				6BD7BC5E2A48FB270009C1EC /* FetchiOSChallenge.app */,
+				6BD7BCB62A49019E0009C1EC /* FetchiOSChallengeUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +168,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		6BD7BCB72A49019E0009C1EC /* FetchiOSChallengeUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BD7BCC22A49038A0009C1EC /* MealDetailServiceMock.swift */,
+				6BD7BCC62A49121F0009C1EC /* MealServiceMock.swift */,
+				6BD7BCC42A4904CE0009C1EC /* MealDetailViewModelTest.swift */,
+				6BD7BCC82A4912D90009C1EC /* MealViewModelTest.swift */,
+			);
+			path = FetchiOSChallengeUnitTests;
+			sourceTree = "<group>";
+		};
+		6BD7BCBF2A4903370009C1EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +209,27 @@
 			productReference = 6BD7BC5E2A48FB270009C1EC /* FetchiOSChallenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6BD7BCB52A49019E0009C1EC /* FetchiOSChallengeUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BD7BCBC2A49019E0009C1EC /* Build configuration list for PBXNativeTarget "FetchiOSChallengeUnitTests" */;
+			buildPhases = (
+				6BD7BCB22A49019E0009C1EC /* Sources */,
+				6BD7BCB32A49019E0009C1EC /* Frameworks */,
+				6BD7BCB42A49019E0009C1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BD7BCBB2A49019E0009C1EC /* PBXTargetDependency */,
+			);
+			name = FetchiOSChallengeUnitTests;
+			packageProductDependencies = (
+				6BD7BCC02A4903370009C1EC /* SDWebImageSwiftUI */,
+			);
+			productName = FetchiOSChallengeUnitTests;
+			productReference = 6BD7BCB62A49019E0009C1EC /* FetchiOSChallengeUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +242,10 @@
 				TargetAttributes = {
 					6BD7BC5D2A48FB270009C1EC = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					6BD7BCB52A49019E0009C1EC = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6BD7BC5D2A48FB270009C1EC;
 					};
 				};
 			};
@@ -192,6 +266,7 @@
 			projectRoot = "";
 			targets = (
 				6BD7BC5D2A48FB270009C1EC /* FetchiOSChallenge */,
+				6BD7BCB52A49019E0009C1EC /* FetchiOSChallengeUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +278,13 @@
 			files = (
 				6BD7BC692A48FB290009C1EC /* Preview Assets.xcassets in Resources */,
 				6BD7BC662A48FB290009C1EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD7BCB42A49019E0009C1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +312,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6BD7BCB22A49019E0009C1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD7BCC52A4904CE0009C1EC /* MealDetailViewModelTest.swift in Sources */,
+				6BD7BCC92A4912D90009C1EC /* MealViewModelTest.swift in Sources */,
+				6BD7BCC32A49038A0009C1EC /* MealDetailServiceMock.swift in Sources */,
+				6BD7BCC72A49121F0009C1EC /* MealServiceMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BD7BCBB2A49019E0009C1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD7BC5D2A48FB270009C1EC /* FetchiOSChallenge */;
+			targetProxy = 6BD7BCBA2A49019E0009C1EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6BD7BC802A48FB290009C1EC /* Debug */ = {
@@ -405,6 +506,42 @@
 			};
 			name = Release;
 		};
+		6BD7BCBD2A49019E0009C1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33T4V24A4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithluane.FetchiOSChallengeUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchiOSChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchiOSChallenge";
+			};
+			name = Debug;
+		};
+		6BD7BCBE2A49019E0009C1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33T4V24A4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithluane.FetchiOSChallengeUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FetchiOSChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FetchiOSChallenge";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +563,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6BD7BCBC2A49019E0009C1EC /* Build configuration list for PBXNativeTarget "FetchiOSChallengeUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BD7BCBD2A49019E0009C1EC /* Debug */,
+				6BD7BCBE2A49019E0009C1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -441,6 +587,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		6BD7BC942A48FBF90009C1EC /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6BD7BC932A48FBF90009C1EC /* XCRemoteSwiftPackageReference "SDWebImageswiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		6BD7BCC02A4903370009C1EC /* SDWebImageSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6BD7BC932A48FBF90009C1EC /* XCRemoteSwiftPackageReference "SDWebImageswiftUI" */;
 			productName = SDWebImageSwiftUI;

@@ -9,9 +9,9 @@ import Foundation
 
 class MealDetailViewModel: ObservableObject {
     @Published var meal: MealDetail?
-    private let mealDetailService: MealDetailNetworkingServiceProtocol
+    private let mealDetailService: MealDetailServiceProtocol
     
-    init(mealDetailService: MealDetailNetworkingServiceProtocol) {
+    init(mealDetailService: MealDetailServiceProtocol) {
         self.mealDetailService = mealDetailService
     }
     
@@ -21,6 +21,7 @@ class MealDetailViewModel: ObservableObject {
                 let fetchedMeal = try await mealDetailService.fetchMeal(mealId: mealId)
                 DispatchQueue.main.async {
                     self.meal = fetchedMeal
+                    print(self.meal)
                 }
             } catch {
                 DispatchQueue.main.async {

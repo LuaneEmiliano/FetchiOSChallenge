@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol MealDetailNetworkingServiceProtocol {
+protocol MealDetailServiceProtocol {
     func fetchMeal(mealId: String) async throws -> MealDetail
 }
 
-class MealDetailNetworkingService: MealDetailNetworkingServiceProtocol {
+class MealDetailService: MealDetailServiceProtocol {
     func fetchMeal(mealId: String) async throws -> MealDetail {
         guard let url = URL(string: "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealId)") else {
             throw NetworkingError.invalidURL

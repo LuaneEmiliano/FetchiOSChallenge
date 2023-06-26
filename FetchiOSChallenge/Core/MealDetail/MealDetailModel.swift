@@ -25,6 +25,16 @@ struct MealDetail: Codable {
         case thumbnail = "strMealThumb"
     }
     
+    init(id: String, name: String? = nil, category: String? = nil, area: String? = nil, instructions: String? = nil, thumbnail: URL? = nil, ingredients: [Ingredient]? = nil) {
+        self.id = id
+        self.name = name
+        self.category = category
+        self.area = area
+        self.instructions = instructions
+        self.thumbnail = thumbnail
+        self.ingredients = ingredients
+    }
+    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = try container.decode(String.self, forKey: .id)

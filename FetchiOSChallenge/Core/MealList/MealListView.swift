@@ -17,12 +17,12 @@ struct MealListView: View {
     
     var body: some View {
         VStack {
-            if let recipes = viewModel.recipes {
+            if let recipes = viewModel.meals {
                 list(recipes: recipes)
             }
         }
         .onAppear {
-            viewModel.fetchRecipes(by: .dessert)
+            viewModel.fetchMeals(by: .dessert)
         }
     }
     

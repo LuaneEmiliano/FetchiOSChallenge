@@ -8,19 +8,19 @@
 import Foundation
 
 class MealViewModel: ObservableObject {
-    @Published var recipes: [Meal]?
+    @Published var meals: [Meal]?
     private let mealService: MealServiceProtocol
     
     init(mealService: MealServiceProtocol) {
         self.mealService = mealService
     }
     
-    func fetchRecipes(by category: Category) {
+    func fetchMeals(by category: Category) {
         Task {
             do {
-                let fetchedRecipes = try await mealService.fetchRecipes(by: category.rawValue)
+                let fetchedMeals = try await mealService.fetchRecipes(by: category.rawValue)
                 DispatchQueue.main.async {
-                    self.recipes = fetchedRecipes
+                    self.meals = fetchedMeals
                 }
             } catch {
                 DispatchQueue.main.async {

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MealDetailView: View {
-    @ObservedObject var viewModel = MealDetailViewModel(mealDetailService: MealDetailNetworkingService())
+    @ObservedObject var viewModel = MealDetailViewModel(mealDetailService: MealDetailService())
     let mealId: String
     
     var body: some View {

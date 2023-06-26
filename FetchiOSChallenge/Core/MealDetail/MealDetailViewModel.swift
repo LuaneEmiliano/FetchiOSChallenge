@@ -21,7 +21,6 @@ class MealDetailViewModel: ObservableObject {
                 let fetchedMeal = try await mealDetailService.fetchMeal(mealId: mealId)
                 DispatchQueue.main.async {
                     self.meal = fetchedMeal
-                    print(self.meal)
                 }
             } catch {
                 DispatchQueue.main.async {
